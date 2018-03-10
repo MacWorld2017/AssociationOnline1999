@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:elevation="10dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:orientation="horizontal">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dip"
+            android:layout_gravity="bottom"
+            android:background="#33000000">
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="图片标题"
+                android:ellipsize="end"
+                android:maxEms="12"
+                android:singleLine="true"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="10sp"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:orientation="horizontal"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp">
+
+                <View
+                    android:id="@+id/dot_0"
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_focused"/>
+
+                <View
+                    android:id="@+id/dot_1"
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/dot_normal"/>
+                <View
+                    android:id="@+id/dot_2"
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/dot_normal"/>
+                <View
+                    android:id="@+id/dot_3"
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/dot_normal"/>
+
+                <View
+                    android:id="@+id/dot_4"
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/dot_normal" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dip">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            app:tabIndicatorColor="@color/home_bottom_checked"
+            app:tabSelectedTextColor="@android:color/black"
+            app:tabTextColor="@android:color/darker_gray"
+            app:tabTextAppearance="@style/tabtextstyle"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            app:tabGravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+        <android.support.v4.view.ViewPager
+            android:layout_marginTop="195dp"
+            android:id="@+id/vp_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+
+</RelativeLayout>

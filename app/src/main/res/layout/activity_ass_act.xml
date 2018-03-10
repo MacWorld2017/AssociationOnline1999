@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zhangfengwei.associationonline.Activities.AssActActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:elevation="10dp"
+        android:id="@+id/relativeLayout">
+        <ImageButton
+            android:id="@+id/back_to_control"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/icon_back3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:text="社团活动"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:id="@+id/ass_act_msg"
+            android:layout_width="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_height="25dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/icon_message"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/ass_act"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+        <!--要为每一项添加滑动删除功能-->
+    </ListView>
+
+    <TextView
+        android:id="@+id/ass_add_act"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/btn_confirm"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+</RelativeLayout>

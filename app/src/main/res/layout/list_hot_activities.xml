@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="5dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/ass_pic2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:id="@+id/ass_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:text="茶社"/>
+        <TextView
+                android:id="@+id/ass_inform"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+            android:text="茶社"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.yalantis.phoenix.PullToRefreshView
+        android:id="@+id/home_refresh2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:background="#fff">
+
+        <ListView
+            android:id="@+id/hot_activities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp">
+        </ListView>
+    </com.yalantis.phoenix.PullToRefreshView>
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zhangfengwei.associationonline">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode = "adjustNothing"/>
+        <activity
+            android:name=".Activities.SearchActivity"
+            android:windowSoftInputMode = "adjustNothing"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.DeclarationActivity"
+            android:label="@string/title_activity_declaration"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode = "adjustNothing" />
+        <activity
+            android:name=".Activities.ResetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode = "adjustNothing" />
+        <activity
+            android:name=".Activities.ControlActivity"
+            android:windowSoftInputMode = "adjustNothing"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.EditIntroActivity"
+            android:windowSoftInputMode = "adjustNothing"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.ReleaseActActivity"
+            android:windowSoftInputMode = "adjustNothing"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.ReleaseInformActivity"
+            android:windowSoftInputMode = "adjustNothing"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.ChangePsdActivity"
+            android:windowSoftInputMode = "adjustNothing"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.ChangePhoneNumberActivity"
+            android:windowSoftInputMode = "adjustNothing"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.Dash.AssAll.AllAssActivity"
+            android:windowSoftInputMode = "adjustNothing"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.Dash.AssAll.AssDetail"
+            android:windowSoftInputMode = "adjustNothing"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.Dash.AssAll.ActiDetail"
+            android:windowSoftInputMode = "adjustNothing"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.Dash.AssAll.ActiRecent"
+            android:windowSoftInputMode = "adjustNothing"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Dash.AssAll.JoinAssActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode = "adjustNothing"/>
+        <activity android:name=".Activities.Dash.AssAll.PreviousActiActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode = "adjustNothing"/>
+        <activity android:name=".Activities.EditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode = "adjustNothing"/>
+        <activity android:name=".Activities.AssActActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode = "adjustNothing">
+
+        </activity>
+    </application>
+
+</manifest>
